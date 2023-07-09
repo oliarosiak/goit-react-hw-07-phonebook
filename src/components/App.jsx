@@ -1,16 +1,19 @@
-export const App = () => {
+import { MainHeader, SecondHeader } from './App.styled';
+
+import ContactForm from './contactForm/ContactForm';
+import Filter from './filter/Filter';
+import ContactList from './contactList/ContactList';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <MainHeader>Hogwarts Magical Phonebook</MainHeader>
+      <ContactForm />
+      <SecondHeader>Contacts</SecondHeader>
+      <Filter />
+      <ContactList />
     </div>
   );
 };
+
+export default App;
