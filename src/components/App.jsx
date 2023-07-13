@@ -3,7 +3,12 @@ import { useEffect } from 'react';
 import { fetchContacts } from 'redux/operation';
 import { selectIsLoading, selectError } from 'redux/selectors';
 
-import { MainHeader, SecondHeader, LoaderContainer } from './App.styled';
+import {
+  Container,
+  MainHeader,
+  SecondHeader,
+  LoaderContainer,
+} from './App.styled';
 
 import ContactForm from './contactForm/ContactForm';
 import Filter from './filter/Filter';
@@ -20,14 +25,14 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <MainHeader>Hogwarts Magical Phonebook</MainHeader>
+    <Container>
+      <MainHeader>Phonebook</MainHeader>
       <ContactForm />
       <SecondHeader>Contacts</SecondHeader>
       <Filter />
       <LoaderContainer>{isLoading && !error && <Loader />}</LoaderContainer>
       <ContactList />
-    </div>
+    </Container>
   );
 };
 

@@ -4,7 +4,7 @@ import { selectItems } from 'redux/selectors';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 
-import { GiWhiteBook } from 'react-icons/gi';
+import { ImCheckmark2 } from 'react-icons/im';
 import {
   FormContainer,
   FormLabel,
@@ -63,17 +63,17 @@ const ContactForm = () => {
     >
       <FormContainer autoComplete="off">
         <FormLabel htmlFor="name">
-          Muggle Name
+          Name
           <FormInput type="text" name="name" required />
           <FormErrorMessage name="name" component="span" />
         </FormLabel>
         <FormLabel htmlFor="number">
-          Not a Magic Number
+          Number
           <FormInput type="tel" name="number" required />
           <FormErrorMessage name="number" component="span" />
         </FormLabel>
         <FormBtm type="submit">
-          <GiWhiteBook /> Lumos Contact!
+          <ImCheckmark2 /> add contact
         </FormBtm>
       </FormContainer>
     </Formik>

@@ -1,14 +1,14 @@
 @import-normalize; /* bring in normalize.css styles */
 
 :root {
-  --text-color: #e9e9e9;
-  --border-color: #9a9a92;
-  --bcg-color: #9a9a9285;
-  --accent-color: #572a1f;
+  --text-color: #acd6de;
+  --border-color: #ded1b3;
+  --bcg-color: #ebe6dc58;
+  --accent-color: #575c6a;
 
-  --lumos-color: #f8f785;
-  --accio-color: #6499c5;
-  --kedavra-color: #61c55c;
+  --add-color: #f2c55e;
+  --filter-color: #5886a5;
+  --delete-color: #e08467;
 }
 
 body {
@@ -25,10 +25,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: var(--text-color); 
-  background-image: url(./img/hp-pic.jpg);
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
+  background: linear-gradient(to right, #141e30, #243b55);
   box-sizing: border-box;
 }
 

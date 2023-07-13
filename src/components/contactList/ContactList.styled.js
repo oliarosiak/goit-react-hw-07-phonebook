@@ -24,10 +24,10 @@ export const ListBtn = styled.button`
     font-size: inherit;
     font-weight: bold;
     background-color: inherit;
-    border: 2px solid var(--kedavra-color);
+    border: 2px solid var(--delete-color);
     cursor: pointer;
     &:hover{    
-        box-shadow: 0 0 20px var(--kedavra-color);
+        box-shadow: 0 0 20px var(--delete-color);
         border: 2px solid var(--border-color);
         outline: 1px solid var(--accent-color);
     }

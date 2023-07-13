@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectFilteredContacts } from 'redux/selectors';
 import { deleteContact } from 'redux/operation';
 
-import { GiSnitchQuidditchBall, GiHarryPotterSkull } from 'react-icons/gi';
+import { ImPushpin, ImCross } from "react-icons/im";
 import { ListContainer, ListItem, ListBtn } from './ContactList.styled';
 
 const ContactList = () => {
@@ -16,11 +16,11 @@ const ContactList = () => {
       {filteredContacts.map(contact => (
         <ListItem key={contact.id}>
           <div>
-            <GiSnitchQuidditchBall /> <span>{contact.name}:</span>{' '}
+            <ImPushpin /> <span>{contact.name}:</span>{' '}
             <span>{contact.number}</span>
           </div>
           <ListBtn type="button" onClick={() => onDeleateButton(contact)}>
-            <GiHarryPotterSkull /> Avada Kedavra
+            <ImCross /> delete contact
           </ListBtn>
         </ListItem>
       ))}

@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { filterValue } from 'redux/filterSlice';
 
-import { RxMagicWand } from 'react-icons/rx';
+import { RxPaperPlane } from 'react-icons/rx';
 import { FilterContainer, FilterLabel, FilterInput } from './Filter.styled';
 
 const Filter = () => {
@@ -11,7 +11,7 @@ const Filter = () => {
   return (
     <FilterContainer>
       <FilterLabel>
-        <RxMagicWand /> Accio contacts by name
+        <RxPaperPlane /> Find contacts by name
         <FilterInput
           type="text"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"

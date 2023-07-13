@@ -1,28 +1,16 @@
-# goit-react-hw-07-phonebook
+# React Homework - 7 - PhoneBook
 
-Виконайте рефакторинг коду програми «Книга контактів». Видали код, що відповідає за зберігання та читання контактів з локального сховища, та додай взаємодію з бекендом для зберігання контактів.
+To your attention, an application for saving phone numbers - Phonebook.
 
-Бекенд
-Створи свій персональний бекенд для розробки за допомогою UI-сервісу mockapi.io. Зареєструйся використовуючи свій обліковий запис GitHub. Створи ресурс contacts щоб отримати ендпоінт /contacts. Використай конструктор ресурсу та опиши об'єкт контакту як на ілюстрації.
+## The project used:
 
-Contact schema
-Форма стану
-Додай у стан Redux обробку індикатора завантаження та помилки. Для цього зміни форму стану.
+`«React»`
+`«React Redux»`
+`«Redux Toolkit»`
+`«Javascript»`
+`«React Icons / library»`
+`«Emotion / library»`
+`«Formik / library»`
+`«yup / npm»`
 
-{
-  contacts: {
-    items: [],
-    isLoading: false,
-    error: null
-  },
-  filter: ""
-}
-
-Операції
-Використовуй функцію createAsyncThunk для оголошення асинхронних генераторів екшенів та виконання HTTP-запитів. Обробку екшенів та зміну даних у стані Redux зроби за допомогою createSlice.
-
-Оголоси наступні операції:
-
-fetchContacts - одержання масиву контактів (метод GET) запитом. Базовий тип екшену "contacts/fetchAll".
-addContact - додавання контакту (метод POST). Базовий тип екшену "contacts/addContact".
-deleteContact - видалення контакту (метод DELETE). Базовий тип екшену "contacts/deleteContact".
+Used assembly: [React project template](https://github.com/goitacademy/react-homework-template#readme)
