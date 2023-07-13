@@ -3,18 +3,19 @@ import { useEffect } from 'react';
 import { fetchContacts } from 'redux/operation';
 import { selectIsLoading, selectError } from 'redux/selectors';
 
-import { MainHeader, SecondHeader } from './App.styled';
+import { MainHeader, SecondHeader, LoaderContainer } from './App.styled';
 
 import ContactForm from './contactForm/ContactForm';
 import Filter from './filter/Filter';
 import ContactList from './contactList/ContactList';
+import Loader from './loader/Loader';
 
 const App = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
 
-  useEffect(() => {    
+  useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
 
@@ -24,7 +25,7 @@ const App = () => {
       <ContactForm />
       <SecondHeader>Contacts</SecondHeader>
       <Filter />
-      {isLoading && !error && <b>Request in progress...</b>}
+      <LoaderContainer>{isLoading && !error && <Loader />}</LoaderContainer>
       <ContactList />
     </div>
   );
