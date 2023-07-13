@@ -3,7 +3,7 @@ import { LoaderBlock, LoaderText } from './Loader.styled';
 
 const Loader = () => (
   <LoaderBlock>   
-    <LoaderText>Request in progress...</LoaderText>
+    <LoaderText>Wait a minute...</LoaderText>
     <ProgressBar
       height="25"
       width="60"
@@ -11,7 +11,7 @@ const Loader = () => (
       wrapperStyle={{}}
       wrapperClass="progress-bar-wrapper"
       borderColor="var(--border-color)"
-      barColor="var(--lumos-color)"
+      barColor="var(--add-color)"
     />
   </LoaderBlock>
 );
